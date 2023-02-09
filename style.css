@@ -108,19 +108,7 @@ hr{
 
 }
 /* adding a footer the the botton of the page    */
-.footer{
-    padding: 0px 20px 0px 20px;
-    position: relative;
-    font-size: 1.2rem;
-    font-weight: 700;
-    text-align: center;
-    width: 100%;
-    text-decoration: none;
-    color: black;
-}
 
-.fa-github, .fa-linkedin{
-    color: black;
-  
-}
+
+
  
