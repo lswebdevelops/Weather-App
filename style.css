@@ -6,6 +6,15 @@
 body{
     background-color: rgb(252, 215, 185);
 }
+input{
+    border: solid 1px rgb(247, 183, 131);
+    border-radius: 5px;
+    width: 68%;
+    padding: 3px;
+    height: 25px;
+    color: grey;
+    font-size: 20px;
+}
 .container{
  min-width: 300px;
  max-width: 550px;
@@ -13,7 +22,10 @@ body{
     padding: 20px;
 }
 button{ 
- 
+    border-radius: 5px;
+    width: 28%;
+    font-size: 20px;
+    height: 25px;
     border: none;
 }
 button:hover{
@@ -42,3 +54,75 @@ button:hover{
     align-items: left;
     transition: all 0.5s ease;
 }
+.icon{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+.temp{
+    font-size: 70px;
+    font-weight: 700;
+    margin: 0 auto;
+}
+.description{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.divITD{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+}
+.divTD{
+    display: grid;
+    justify-content: right;
+    
+    margin: 0 auto;
+    width: 100%;
+}
+
+.wind{
+    width: 90%;
+    height: 100%;
+    font-size: large;
+    font-weight: 600;
+    background:rgb(254, 230, 210);
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    transition: all 0.5s ease;
+}
+hr{
+    border: 1px solid rgb(242, 201, 167);
+    width: 90%;
+    padding: 0px 20px 0px 20px;
+    box-shadow: 0 0 10px 0 rgba(192, 164, 161, 0.2);
+
+}
+/* adding a footer the the botton of the page    */
+.footer{
+    padding: 0px 20px 0px 20px;
+    position: absolute;
+    bottom: 5px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    left: 0;
+    right: 0;
+    height:35px;
+    text-decoration: none;
+    color: black;
+}
+.fa-github, .fa-linkedin{
+    color: black;
+  
+}
+ 

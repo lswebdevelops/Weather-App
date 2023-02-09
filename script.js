@@ -26,7 +26,7 @@ const fetchCity = async (city) => {
 
     cityName.innerText = `${name},\n${data.sys.country}`;
 
-
+   
     const temp = document.createElement('div');
     temp.classList.add('temp');
     temp.innerText = `${Math.round(feels_like - 273)}°C`;
@@ -41,15 +41,22 @@ const fetchCity = async (city) => {
 
     const wind = document.createElement('div');
     wind.classList.add('wind');
-    wind.innerText = `Wind: ${speed} m/s`;
+    wind.innerText = `Wind: ${(speed * 3.6).toFixed(2)} km/h`;
 
     weatherBox.appendChild(cityName);
-    
-    weatherBox.appendChild(temp);
-    weatherBox.appendChild(weatherIcon);
-    weatherBox.appendChild(weatherDescription);
-    weatherBox.appendChild(wind);
 
+    const divITD = document.createElement('div');
+    weatherBox.appendChild(divITD);
+    divITD.classList.add('divITD');
+    divITD.appendChild(weatherIcon);
+    const divTD = document.createElement('div');
+    divITD.appendChild(divTD);
+    divTD.classList.add('divTD');
+    divTD.appendChild(temp);
+    divTD.appendChild(weatherDescription);
+    weatherBox.appendChild(wind);
+    const hr = document.createElement('hr');
+    weatherBox.appendChild(hr);
     container.appendChild(weatherBox);
 }
 catch(err){
