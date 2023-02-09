@@ -1,3 +1,44 @@
 *{
-    background-color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(252, 215, 185);
+}
+.container{
+ min-width: 300px;
+ max-width: 550px;
+    margin: 0 auto;
+    padding: 20px;
+}
+button{ 
+ 
+    border: none;
+}
+button:hover{
+    
+   border-radius: 5px;
+   
+    cursor: pointer;
+}
+.weather{
+    padding: 15px 3px 3px 3px;
+
+}
+.city{
+
+    width: 90%;
+    height: 100%;
+    font-size: xx-large;
+    background:rgb(254, 230, 210);
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    transition: all 0.5s ease;
 }
